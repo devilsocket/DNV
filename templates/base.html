@@ -1,0 +1,191 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DNV | {{ title }}</title>
+
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'font-awesome/css/font-awesome.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    <link href="{% static 'css/plugins/dataTables/datatables.min.css' %}" rel="stylesheet">
+
+
+
+</head>
+
+<body class="">
+
+    <div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="bg-primary">
+                    <!--<i class="text-white fa fa-eye fa-3x"></i>-->
+                    <a href="{% url 'dashboard' %}">
+                        <span class="text-white nav-label display-4 align-center">DNV</span>
+                        <span class="text-white nav-label display-7 align-center">v1.0</span>
+                    </a>
+                </li>
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <img alt="image" class="rounded-circle" width="20%"src="{% static 'img/user.svg' %}"/>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="block m-t-xs font-bold">Hello, {{ user.username }}</span>
+                            <span class="text-muted text-xs block">Your Settings<b class="caret"></b></span>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a class="dropdown-item" href="{% url 'logout' %}">Logout</a></li>
+                        </ul>
+                    </div>
+                    
+                </li>
+                    
+
+                <li class="{% if '/' == request.path %}active{%else%}{%endif%}">
+                    <a href="{% url 'dashboard' %}"><i class="fa fa-home"></i> <span class="nav-label">Home</span></a>
+                </li>
+
+                <li class="{% if '/upload/' in request.path %}active{%else%}{%endif%}">
+                    <a href="{% url 'upload_root' %}"><i class="fa fa-upload"></i> <span class="nav-label">Upload</span></a>
+                </li>
+
+                <li class="{% if '/session/' in request.path %}active{%else%}{%endif%}">
+                    <a href="{% url 'session_root' %}"><i class="fa fa-map"></i> <span class="nav-label">Session</span></a>
+                </li>
+
+                <!--
+                <li class="{% if '/session/' in request.path %}active{%else%}{%endif%}">
+                    <a href="{% url 'session_root' %}"><i class="fa fa-desktop"></i> <span class="nav-label">Application</span></a>
+                </li>
+
+                <li class="{% if '/session/' in request.path %}active{%else%}{%endif%}">
+                    <a href="{% url 'session_root' %}"><i class="fa fa-comments"></i> <span class="nav-label">Activities</span></a>
+                </li>
+                -->
+                   
+
+            </ul>
+
+        </div>
+    </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+        <!--
+            <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a> 
+            </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li style="padding: 20px">
+                        <span class="m-r-sm text-muted welcome-message">DPM - Decrypt Packet Monitor</span>
+                    </li>
+                    <li>
+                        <a href="{% url 'logout' %}">logout</a>
+                    </li>
+                </ul>
+            </nav>
+        -->
+        </div>
+
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-sm-4">
+                    <h2>{{ page }}</h2>
+                    <ol class="breadcrumb">
+                        {% for item in path %}
+                            <li class="breadcrumb-item active">
+                                <strong>{{ item }}</strong>
+                            </li>
+                        {% endfor %}
+                    </ol>
+                </div>
+                <div class="col-sm-8">
+                    <div class="title-action animated bounceInDown">
+                        <a href="{% url 'dashboard' %}" class="ml-5 btn btn-primary">Home</a>
+                        <a href="{% url 'upload_root' %}" class="ml-5 btn btn-primary">Upload</a>
+                        <a href="{% url 'session_root' %}" class="ml-5 btn btn-primary">Session</a>
+                        <!-- <a href="" class="ml-5 btn btn-primary">Settings</a> -->
+                        <a href="{% url 'logout' %}" class="ml-5 btn btn-primary">Log Out</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                       {% block content %}
+                       {% endblock %}
+            </div>           
+            <div class="footer">
+                <div class="float-right">
+                    Build by perfectionist with deadlines.
+                </div>
+                <div>
+                    <strong>Copyright</strong> DNV &copy; 2019-20
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <!-- Mainly scripts -->
+    <script src="{% static 'js/jquery-3.1.1.min.js' %}" ></script>
+    <script src="{% static 'js/popper.min.js' %}" ></script>
+    <script src="{% static 'js/bootstrap.js' %}" ></script>
+    <script src="{% static 'js/plugins/metisMenu/jquery.metisMenu.js' %}" ></script>
+    <script src="{% static 'js/plugins/slimscroll/jquery.slimscroll.min.js' %}" ></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="{% static 'js/inspinia.js' %}" ></script>
+    <script src="{% static 'js/plugins/pace/pace.min.js' %}" ></script>
+
+
+    <script src="{% static 'js/plugins/dataTables/datatables.min.js' %}" ></script>
+    <script src="{% static 'js/plugins/dataTables/dataTables.bootstrap4.min.js' %}" ></script>
+    <script src="{% static 'js/plugins/typehead/bootstrap3-typeahead.min.js' %}"></script>
+
+    <!-- Page-Level Scripts -->
+    <script>
+
+        $(document).ready(function(){
+            var t = $('.dataTables-example').DataTable({
+                pageLength: 10,
+                responsive: true,
+                dom: '<"html5buttons"B>lTfgitp',
+                buttons: [
+                    { extend: 'copy'},
+                    {extend: 'csv'},
+                    {extend: 'excel'},
+                    {extend: 'pdf'},
+
+                    {extend: 'print',
+                     customize: function (win){
+                            $(win.document.body).addClass('white-bg');
+                            $(win.document.body).css('font-size', '10px');
+
+                            $(win.document.body).find('table')
+                                    .addClass('compact')
+                                    .css('font-size', 'inherit');
+                    }
+                    }
+                ]
+
+            });
+
+            t.on( 'order.dt search.dt', function () {
+                t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+                    cell.innerHTML = i+1;
+                });
+            }).draw();
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

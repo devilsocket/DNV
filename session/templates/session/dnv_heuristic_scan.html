@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	{% if dnv_activity_uni %}
+	    <div class="wrapper wrapper-content animated fadeInRight">
+	        <div class="row">
+	        	<div class="col-lg-6">
+	                <div id="appBar" width="auto" height="auto"></div>
+	        	</div>   
+	            <div class="col-lg-6">
+	                <div id="appPie" width="auto" height="auto"></div>
+	        	</div>   
+	        </div>
+	    </div>
+	    <script src="{% static 'js/highcharts.js' %}"></script>
+	    <script src="{% static 'js/exporting.js' %}"></script>
+	    <script type="text/javascript">
+	    	var aData = {{ dnv_activity_uni|safe }};
+
+	    	Highcharts.chart('appPie', {
+			    chart: {
+			        plotBackgroundColor: null,
+			        plotBorderWidth: null,
+			        plotShadow: false,
+			        type: 'pie',
+			        credits: null,
+			        height: 700
+			    },
+			    credits: {
+			    	enabled: false
+			    },
+			    title: {
+			        text: ''
+			    },
+			    tooltip: {
+			        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+			    },
+			    plotOptions: {
+			        pie: {
+			        	size: 500,
+			            allowPointSelect: true,
+			            cursor: 'pointer',
+			            dataLabels: {
+			                enabled: true,
+			                format: '{point.name}({point.percentage:.1f}%)',
+			                style: {
+			                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+			                }
+			            }
+			        }
+			    },
+			    series: [{
+			        name: 'Session',
+			        colorByPoint: true,
+			        data: aData
+			    }]
+			});
+			Highcharts.chart('appBar', {
+			    chart: {
+			        type: 'bar',
+
+			        height: 700
+			    },
+			    xAxis: {
+    				type: 'Activities',
+    				title: {
+				      text: "Detected Layer 7's Activities"
+				    }
+  				},
+				yAxis: {
+					type: 'Sessions',
+				    title: {
+				      text: 'Total Sessions Detected'
+				    }
+				},
+			    credits: {
+			    	enabled: false
+			    },
+			    title: {
+			        text: ''
+			    },
+			    tooltip: {
+			        pointFormat: '{series.name}: <b>{point.y} Sessions</b>'
+			    },
+			    plotOptions: {
+			        bar: {
+			        	//size: 600,
+			            allowPointSelect: true,
+			            cursor: 'pointer',
+			            dataLabels: {
+			                enabled: true,
+			                format: '{point.name}: {point.percentage}',
+			                style: {
+			                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+			                }
+			            }
+			        }
+			    },
+			    series: [{
+			        name: 'Activities',
+			        dataLabels: {
+			                enabled: true,
+			                format: '{point.name}({point.y})',
+			                style: {
+			                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+			                }
+			        },
+			        colorByPoint: true,
+			        //pointWidth: 40,
+			        data: aData
+			    }]
+			});  	
+	    </script>
+	{% else %}
+		<div class="animated fadeInRightBig">
+			<p>Server is Busy / Offline.Please try after sometime.</p>
+		</div>		
+	{% endif %}
+{% endblock %}
+    

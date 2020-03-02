@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	{% if sess_vaults %}
+		<div class="wrapper wrapper-content animated fadeInRight">
+			<div class="row">
+	            <div class="col-lg-12">
+	                <div class="ibox shadow rounded">
+	                    <div class="rounded-top ibox-title bg-primary text-center">
+	                        <b>All Vaults Uploaded By {{ request.user }}</b>
+	                    </div>
+	                    <div class="ibox-content">
+	                        <div class="table-responsive">
+	                    <table class="table table-striped table-bordered table-hover dataTables-example" >
+	                    <thead>
+	                    <tr>
+	                        <th>S.No.</th>
+	                        <th>Scan Complete Time</th>
+	                        <th>Mobile</th>
+	                        <th>Group</th>
+	                        <th>Uploader</th>
+	                        <th>Vault's Session Count</th>
+	                        <th>Normal Scan Results</th>
+	                        <th>Deep Scan Results</th>
+	                        <th>Neural Scan Results</th>
+	                        <th>Data Reversed</th>
+	                    </tr>
+	                    </thead>
+	                    <tbody>
+	                        {% for sess_vault in sess_vaults %}
+	                            <tr>
+	                                <td></td>
+	                                <td>{{ sess_vault.scan_end_time }}</td>
+	                                <td>{{ sess_vault.mobile }}</td>
+	                                <td>{{ sess_vault.group }}</td>
+	                                <td>{{ sess_vault.uploader }}</td>
+	                                <td>{{ sess_vault.session_count }}</td>
+	                                <td>
+	                                    <form action="{% url 'dnv_basic_scan' %}" method="POST">
+	                                        {% csrf_token %}
+	                                        <input type="hidden" name="upload_id" value="{{ sess_vault.upload_id }}" />
+	                                        <button type="submit" class="shadow btn btn-secondary btn-block">Summary</button>
+	                                    </form> 
+                                	</td>
+                                	<td>
+	                                    <form action="{% url 'dnv_deep_scan' %}" method="POST">
+	                                        {% csrf_token %}
+	                                        <input type="hidden" name="upload_id" value="{{ sess_vault.upload_id }}" />
+	                                        <button type="submit" class="shadow btn btn-info btn-block">Applications</button>
+	                                    </form> 
+                                	</td>
+                                	<td>
+	                                    <form action="{% url 'dnv_heuristic_scan' %}" method="POST">
+	                                        {% csrf_token %}
+	                                        <input type="hidden" name="upload_id" value="{{ sess_vault.upload_id }}" />
+	                                        <button type="submit" class="shadow btn btn-danger btn-block">Activities</button>
+	                                    </form> 
+                                	</td>
+                                	<td>
+	                                    <form action="{% url 'dnv_heuristic_scan' %}" method="POST">
+	                                        {% csrf_token %}
+	                                        <input type="hidden" name="upload_id" value="{{ sess_vault.upload_id }}" />
+	                                        <button type="submit" class="shadow btn btn-primary btn-block" disabled>Data</button>
+	                                    </form> 
+                                	</td>
+	                            </tr>
+	                        {% endfor %}  
+	                    </tbody>
+	                    </table>
+	                        </div>
+
+	                    </div>
+	                </div>
+	            </div>
+		    </div>
+		</div>
+	{% endif %}
+{% endblock %}

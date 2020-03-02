@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    {% if zip_path %}
+        <br>
+        <div class="row animated fadeInRight">
+            <div class="col-lg-12">
+                <div class="shadow rounded ibox">
+                    <div class="ibox-title bg-primary">
+                        <h5>Uploaded File</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="shadow rounded table table-striped">
+                        <thead>
+                          <tr class="bg-primary">
+                            <th class="text-center" colspan="2">File Info</th>
+                          </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr class="">
+                                <th>File Name</th><th>{{ file_name }}</th>
+                            </tr>
+                            <tr class="">
+                                <th>File Size</th><th>{{ size }} Bytes</th>
+                            </tr>
+                            <tr class="">
+                                <th>File Upload Date</th><th>{{ upload_date }}</th>
+                            </tr>
+                            <tr class="">
+                                <th>Target Mobile Number</th><th>{{ mobile }}</th>
+                            </tr>
+                            <tr class="">
+                                <th>Group Name</th><th>{{ group }}</th>
+                            </tr>
+                            <tr class="">
+                                <th>Uploaded By</th><th>{{ uploader }}</th>
+                            </tr>
+                        </tbody>
+                        </table>
+                        <hr>
+                            <h5>For Scanning the Uploaded File</h5>
+                        <hr>
+                        <form action="{% url 'passive_execute' %}" method="POST">
+                            {% csrf_token %}
+                            <input type="hidden" name="file_path" value="{{ zip_path }}" />
+                            <input type="hidden" name="file_name" value="{{ file_name }}" />
+                            <input type="hidden" name="size" value="{{ size }}" />
+                            <input type="hidden" name="group" value="{{ group }}" />
+                            <input type="hidden" name="uploader" value="{{ uploader }}" />
+                            <input type="hidden" name="mobile" value="{{ mobile }}" />
+                            <input type="hidden" name="upload_id" value="{{ upload_id }}" />
+                            <button type="submit" class="shadow btn btn-info btn-block">Scan</button>
+                        </form>
+                        <!--
+                        <hr>
+                            <h5>For Removing the Uploaded File</h5>
+                        <hr>
+                        <form action="{% url 'remove_pcap' %}" method="POST">
+                            {% csrf_token %}
+                            <input type="hidden" name="file_path" value="{{ zip_path }}" />
+                            <input type="hidden" name="file_name" value="{{ file_name }}" />
+                            <input type="hidden" name="size" value="{{ size }}" />
+                            <input type="hidden" name="group" value="{{ group }}" />
+                            <input type="hidden" name="uploader" value="{{ uploader }}" />
+                            <input type="hidden" name="mobile" value="{{ mobile }}" />
+                            <button type="submit" class="shadow btn btn-danger btn-block">Delete</button>
+                        </form>
+                        -->
+                    </div>
+                </div>
+            </div>      
+        </div>
+    {% endif %}
+{% endblock %}

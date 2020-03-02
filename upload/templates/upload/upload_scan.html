@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	{% if upload_id %}
+		<br>
+		<div class="row animated fadeInRight">
+			<div class="col-lg-12">
+                <div class="shadow rounded ibox">
+                    <div class="ibox-title bg-primary text-center">
+                        <h5>Scan Complete for file {{ file_name }}</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="shadow rounded table table-striped">
+                        <thead>
+                          <tr class="bg-primary">
+                            <th class="text-center" colspan="2">Scan Summary</th>
+                          </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr class="">
+                                <th>Scan Duration</th><th>{{ scan_duration }} Seconds</th>
+                            </tr>
+                            <tr class="">
+                                <th>Scan Start Time</th><th>{{ scan_start_time }}</th>
+                            </tr>
+                            <tr class="">
+                                <th>Scan End Time</th><th>{{ scan_end_time }}</th>
+                            </tr>
+                            <tr class="">
+                                <th>Target Mobile Number</th><th>{{ mobile }}</th>
+                            </tr>
+                            <tr class="">
+                                <th>Group Name</th><th>{{ group }}</th>
+                            </tr>
+                            <tr class="">
+                                <th>Uploaded By</th><th>{{ uploader }}</th>
+                            </tr>
+                            <tr class="">
+                                <th>Total no. Sessions extracted</th><th>{{ session_count }}</th>
+                            </tr>
+                        </tbody>
+                        </table>
+                        <hr>
+                            <h5>View / Analyze Results</h5>
+                        <hr>
+                        <form action="{% url 'session_analyze' %}" method="POST">
+                            {% csrf_token %}
+                            <input type="hidden" name="upload_id" value="{{ upload_id }}" />
+                            <button type="submit" class="shadow btn btn-info btn-block">Analyze</button>
+                        </form> 
+                    </div>
+                    
+                </div>
+            </div>   
+		</div>
+	{% endif %}
+{% endblock %}

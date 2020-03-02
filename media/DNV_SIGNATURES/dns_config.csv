@@ -1,0 +1,273 @@
+domain,application,activity,category
+s3.ll.dash.row.aiv-cdn.net, Amazon Video,Watching / Streaming a Video,Video
+s3-dub.cf.dash.row.aiv-cdn.net, Amazon Video,Watching / Streaming a Video,Video
+dmqdd6hw24ucf.cloudfront.net, Amazon Video,Watching / Streaming a Video,Video
+d25xi40x97liuc.cloudfront.net, Amazon Video,Watching / Streaming a Video,Video
+.aiv-delivery.net, Amazon Video,Watching / Streaming a Video,Video
+.aiv-cdn.net, Amazon Video,Watching / Streaming a Video,Video
+amazon., Amazon,Using  ‘Amazon’ based website / service,Web
+amazon.com, Amazon,Using  ‘Amazon’ based website / service,Web
+images-amazon.com, Amazon,Using  ‘Amazon’ based website / service,Web
+amazonaws.com, Amazon,Using  ‘Amazon’ based website / service,Web
+amazon-adsystem.com, Amazon,Using  ‘Amazon’ based website / service,Web
+.cloudfront.net, Amazon,Using  ‘Amazon’ based website / service,Web
+.push.apple.com, Apple Push,Recieving a notification on an apple device,Notification
+.apple-dns.net, Apple,Using  ‘Apple’ based website / service,Web
+.mzstatic.com, Apple,Using  ‘Apple’ based website / service,Web
+.aaplimg.com, Apple,Using  ‘Apple’ based website / service,Web
+aaplimg.com, Apple,Undergoing an update on an Apple based device,Software Update
+.apple.com, Apple,Using  ‘Apple’ based website / service,Web
+.icloud.com, Apple icloud,Using  ‘Apple’ based website / service,Web
+iosapps.itunes.apple.com, Applestore,Undergoing an update on an Apple based device,Software Update
+osxapps.itunes.apple.com, Applestore,Undergoing an update on an Apple based device,Software Update
+buy.itunes.apple.com, Applestore,Undergoing an update on an Apple based device,Software Update
+su.itunes.apple.com, Applestore,Undergoing an update on an Apple based device,Software Update
+se.itunes.apple.com, Applestore,Undergoing an update on an Apple based device,Software Update
+myapp.itunes.apple.com, Applestore,Undergoing an update on an Apple based device,Software Update
+swscan.apple.com, Applestore,Undergoing an update on an Apple based device,Software Update
+itunes-apple.com, Applestore,Undergoing an update on an Apple based device,Software Update
+itunes.apple.com, Apple itunes,Listening to a song on Apple’s Itunes,Music
+tlnk.io, Apple Itunes,Listening to a song on Apple’s Itunes,Music
+.cnn.c,CNN,Browsing / Viewing news on CNN,NEWS
+.cnn.net,CNN,Browsing / Viewing news on CNN,NEWS
+.dropbox.com, Dropbox, Accessing Cloud Storage / File Syncronization / Cloud Services,File Hosting Service
+.dropboxstatic.com, Dropbox, Accessing Cloud Storage / File Syncronization / Cloud Services,File Hosting Service
+.dropbox-dns.com, Dropbox, Accessing Cloud Storage / File Syncronization / Cloud Services,File Hosting Service
+log.getdropbox.com, Dropbox, Accessing Cloud Storage / File Syncronization / Cloud Services,File Hosting Service
+.ebay., Ebay, Shopping on EBAY,E-COMMERCE
+.ebay.com, Ebay, Shopping on EBAY,E-COMMERCE
+.ebaystatic.com, Ebay, Shopping on EBAY,E-COMMERCE
+.ebaydesc.com, Ebay, Shopping on EBAY,E-COMMERCE
+.ebayrtm.com, Ebay, Shopping on EBAY,E-COMMERCE
+.ebaystratus.com, Ebay, Shopping on EBAY,E-COMMERCE
+.ebayimg.com, Ebay, Shopping on EBAY,E-COMMERCE
+.instagram., Instagram,Using Instagram,Social Networking Site
+instagram., Instagram,Using Instagram,Social Networking Site
+.cdninstagram.com, Instagram,Using Instagram,Social Networking Site
+facebook.com, Facebook,Using Facebook,Social Networking Site
+fbstatic-a.akamaihd.net, Facebook,Using Facebook,Social Networking Site
+.fbcdn.net, Facebook,Using Facebook,Social Networking Site
+.facebook.net, Facebook,Using Facebook,Social Networking Site
+.fbsbx.com, Facebook,Using Facebook,Social Networking Site
+speedtest., Ookla,Performing a Speed Test on Ookla,SERVICE
+.ooklaserver.net, Ookla,Performing a Speed Test on Ookla,SERVICE
+ntop.org, Ntop, Network,Uncategorized
+docs.googleusercontent.com,Google Docs,Viewing a document online on Google Docs,Google Service
+docs.google.com,Google Docs,Viewing a document online on Google Docs,Google Service
+drive-thirdparty.googleusercontent.com,Google Drive,Using a third party app / service that uses Google Drive,Google Service
+drive.google.com,Google Drive,Accessing a media online on Google Drive,Google Service
+android.clients.google.com,Playstore,Installing / Updating a software from Google’s Playstore from an Android Based device,Software Install / Update
+.googlesyndication.com, Google,Clicking on an ad advertized by Google AD service,Advertisement
+googleads., Google,Clicking on an ad advertized by Google AD service,Advertisement
+.doubleclick.net, Google,Clicking on an ad advertized by Google AD service,Advertisement
+googleadservices., Google,Clicking on an ad advertized by Google AD service,Advertisement
+.2mdn.net, Google,Clicking on an ad advertized by Google AD service,Advertisement
+.dmtry.com, Google,Clicking on an ad advertized by Google AD service,Advertisement
+google-analytics., Google,Clicking on an ad advertized by Google AD service,Advertisement
+gtv1.com, Google,Accessing a Google based web services,Web
+images2-hangout-opensocial.googleusercontent.com, Hangout,Accessing Google’s Hangout app ,Messaging Client
+googleapis.com, Google services,Accessing google based service,Google Service
+.googletagservices.com, Google services,Accessing google based service,Google Service
+mtalk.google.com,Gtalk,Messaging using Gtalk,Messaging Client
+plus.google.com,Google Plus,Using Google+ or Google Plus,Social Networking Site
+plus.url.google.com,Google Plus,Using Google+ or Google Plus,Social Networking Site
+.googlezip.net, Google,Accessing a Google based web services,Google Service
+googleusercontent.com, Google,Accessing a Google based web services,Google Service
+1e100.net, Google,Accessing a Google based web services,Google Service
+maps.google., Google Maps,Viewing / Searching maps using Google Maps,MAPS
+maps.gstatic.com, Google Maps,Viewing / Searching maps using Google Maps,MAPS
+.gmail., Gmail,Sending / Recieving / Accessing mails on GMAIL email client,EMAILS
+mail.google., Gmail,Sending / Recieving / Accessing mails on GMAIL email client,EMAILS
+google., Google,Accessing a Google based web services,Google Service
+.google., Google,Accessing a Google based web services,Google Service
+.gstatic.com, Google,Accessing a Google based web services,Google Service
+ggpht.com, Google,Accessing a Google based web services,Google Service
+mail.outlook.com, Hotmail,Sending / Recieving / Accessing mails on HOTMAIL email client,EMAILS
+.last.fm, Lastfm,Listening to music / song on LASTFM,Music
+msn.com,MSN,Accessing the wen portal of MSN,Web
+netflix.com, Netflix,Watching TV shows / Movies on NETFLIX ,Video
+nflxext.com, Netflix,Watching TV shows / Movies on NETFLIX ,Video
+nflximg.com, Netflix,Watching TV shows / Movies on NETFLIX ,Video
+nflximg.net, Netflix,Watching TV shows / Movies on NETFLIX ,Video
+nflxvideo.net, Netflix,Watching TV shows / Movies on NETFLIX ,Video
+nflxso.net, Netflix,Watching TV shows / Movies on NETFLIX ,Video
+.skype., Skype,On a voice call or video chat via SKYPE,VOIP
+.skypeassets., Skype,On a voice call or video chat via SKYPE,VOIP
+.skypedata., Skype,On a voice call or video chat via SKYPE,VOIP
+.skypeecs-, Skype,On a voice call or video chat via SKYPE,VOIP
+.skypeforbusiness., Skype,On a voice call or video chat via SKYPE,VOIP
+.lync.com, Skype,On a voice call or video chat via SKYPE,VOIP
+e7768.b.akamaiedge.net, Skype,On a voice call or video chat via SKYPE,VOIP
+e4593.dspg.akamaiedge.net, Skype,On a voice call or video chat via SKYPE,VOIP
+e4593.g.akamaiedge.net, Skype,On a voice call or video chat via SKYPE,VOIP
+.tuenti.com, Tuenti,On a voice call or video chat via SKYPE,VOIP
+.twttr.com, Twitter, Viewing tweets / tweeting a tweet using Twitter,Social Networking Site
+twitter., Twitter, Viewing tweets / tweeting a tweet using Twitter,Social Networking Site
+twimg.com, Twitter, Viewing tweets / tweeting a tweet using Twitter,Social Networking Site
+.viber.com, Viber,Using Viber,Messaging Client
+.cdn.viber.com, Viber,Using Viber,Messaging Client
+.viber.it, Viber,Using Viber,Messaging Client
+wikipedia., Wikipedia,Browsing on Wikipedia,Web
+wikimedia., Wikipedia,Browsing on Wikipedia,Web
+mediawiki., Wikipedia,Browsing on Wikipedia,Web
+wikimediafoundation., Wikipedia,Browsing on Wikipedia,Web
+mmg-fna.whatsapp.net, Whatsapp files,Accessing / Sending a file on Whatsapp ,Messaging Client
+.whatsapp., Whatsapp,Using Whatsapp,Messaging Client
+.yahoo., Yahoo,Accessing a page under Yahoo,Web
+.yimg.com, Yahoo,Accessing a page under Yahoo,Web
+yahooapis., Yahoo,Accessing a page under Yahoo,Web
+upload.youtube.com, Youtube upload,Uploading a video to Youtube,Video
+upload.video.google.com, Youtube Upload,Uploading a video to Youtube,Video
+youtubei.googleapis.com, Youtube,Watching a video on Youtube,Video
+youtube., Youtube,Watching a video on Youtube,Video
+youtu.be., Youtube,Watching a video on Youtube,Video
+yt3.ggpht.com, Youtube,Watching a video on Youtube,Video
+.googlevideo.com, Youtube,Watching a video on Youtube,Video
+.ytimg.com, Youtube,Watching a video on Youtube,Video
+youtube-nocookie., Youtube,Watching a video on Youtube,Video
+.vevo.com, Vevo,Listening to music,Music
+.spotify., Spotify,Listening to music,Music
+audio-fa.scdn.co, Spotify,Listening to music,Music
+edge-mqtt.facebook.com, Facebook Messenger,Using Facebook Messenger ,Messaging Client
+messenger.com, Facebook Messenger,Using Facebook Messenger ,Messaging Client
+.pandora.com, Pandora,Listening / Stteaming on Pandora,Internet  Radio
+.torproject.org,TOR, Using Network via anonymous TOR network, Anonymous Communication
+.kakao.com, Kakaotalk,Using Kakotalk,Messaging Client
+ttvnw.net, Twitch,Live streaming on Twitch,Video Streaming
+static-cdn.jtvnw.net, Twitch,Live streaming on Twitch,Video Streaming
+www-cdn.jtvnw.net, Twitch,Live streaming on Twitch,Video Streaming
+.qq.com,QQ,Using Tencent’s QQ,Messaging Client
+.gtimg.com,QQ,Using Tencent’s QQ,Messaging Client
+.weibo.com, Sina,Using Sina Weibo,Social Networking Site
+.weibo.cn, Sina,Using Sina Weibo,Social Networking Site
+.sinaimg.cn, Sina,Using Sina Weibo,Social Networking Site
+.sinajs.cn, Sina,Using Sina Weibo,Social Networking Site
+.sina.cn, Sina,Using Sina Weibo,Social Networking Site
+.sina.com.cn, Sina,Using Sina Weibo,Social Networking Site
+feelinsonice.appspot.com, Snapchat,Sharing a moment on Snapchat / viewing live stories,Social Networking Site
+feelinsonice-hrd.appspot.com, Snapchat,Sharing a moment on Snapchat / viewing live stories,Social Networking Site
+feelinsonice.com, Snapchat,Sharing a moment on Snapchat / viewing live stories,Social Networking Site
+.snapchat., Snapchat,Sharing a moment on Snapchat / viewing live stories,Social Networking Site
+.snapads., Snapchat,Sharing a moment on Snapchat / viewing live stories,Social Networking Site
+.sc-cdn.net, Snapchat,Sharing a moment on Snapchat / viewing live stories,Social Networking Site
+.sc-prod.net, Snapchat,Sharing a moment on Snapchat / viewing live stories,Social Networking Site
+.sc-jpl.com, Snapchat,Sharing a moment on Snapchat / viewing live stories,Social Networking Site
+sc-analytics.appspot.com, Snapchat,Sharing a moment on Snapchat / viewing live stories,Social Networking Site
+.waze.com, Waze,Using GPS navigation on WAZE,GPS Service
+.deezer.com, Deezer,Listening to music on Deezer,Music
+.microsoft.com, Microsoft,Accessing Microsoft’s services,SERVICE
+i-msdn.sec.s-msft.com, Microsoft,Using a device having WINDOWS OS,WINDOWS
+i2-msdn.sec.s-msft.com, Microsoft,Using a device having WINDOWS OS,WINDOWS
+.webtrends.com, Microsoft,Accessing Microsoft’s services,SERVICE
+.msecnd.net, Microsoft,Accessing Microsoft’s services,SERVICE
+bing.com, Microsoft,Accessing Microsoft’s services,SERVICE
+.visualstudio.com, Microsoft,Working on Visual Studio Software,Software
+login.live.com, Microsoft,Accessing Microsoft’s services,SERVICE
+bn1301.storage.live.com, MS One Drive,Accessing Windows based cloud service,CLOUD
+*.gateway.messenger.live.com, MS One Drive,Accessing Windows based cloud service,CLOUD
+skyapi.live.net, MS One Drive,Accessing Windows based cloud service,CLOUD
+d.docs.live.net, MS One Drive,Accessing Windows based cloud service,CLOUD
+onedrive.live.com, MS One Drive,Accessing Windows based cloud service,CLOUD
+update.microsoft.com, Windows Update,Updating softwares in a device having windows os,Update
+.windowsupdate.com, Windows Update,Updating softwares in a device having windows os,Update
+worldofwarcraft.com,World Of War Craft,Playing a game name World Of WarCraft,Gaming
+.anchorfree., Hotspot shield,Communicating using VPN services provided by Hotspot Shield, Anonymous Communication
+hotspotshield.com, Hotspot shield,Communicating using VPN services provided by Hotspot Shield, Anonymous Communication
+.northghost.com, Hotspot shield,Communicating using VPN services provided by Hotspot Shield, Anonymous Communication
+.webex.com, Webex,Having a voice call Webex,VOIP
+.ocsdomain.com,OCS,Watching a video on OCS Orange Cinéma Séries,Video
+ocs.fr,OCS,Watching a video on OCS Orange Cinéma Séries,Video
+.ocs.fr,OCS,Watching a video on OCS Orange Cinéma Séries,Video
+.labgency.ws,OCS,Watching a video on OCS Orange Cinéma Séries,Video
+.iflix.com, Iflix,Watching a video on IFLIX,Video
+.app.iflixcorp.com, Iflix,Watching a video on IFLIX,Video
+.images.iflixassets.com, Iflix,Watching a video on IFLIX,Video
+crl.microsoft.com, Office 365,Using Office 365 software suite,Software
+evsecure-ocsp.verisign.com, Office 365,Using Office 365 software suite,Software
+evsecure-aia.verisign.com, Office 365,Using Office 365 software suite,Software
+evsecure-crl.verisign.com, Office 365,Using Office 365 software suite,Software
+.omniroot.com, Office 365,Using Office 365 software suite,Software
+.microsoftonline.com, Office 365,Using Office 365 software suite,Software
+.office365.com, Office 365,Using Office 365 software suite,Software
+.office.com, Office 365,Using Office 365 software suite,Software
+office.net, Office 365,Using Office 365 software suite,Software
+.msocsp.com, Office 365,Using Office 365 software suite,Software
+.msocdn.com, Office 365,Using Office 365 software suite,Software
+officeapps.live.com, Office 365,Using Office 365 software suite,Software
+outlook.live.com, Office 365,Using Office 365 software suite,Software
+office.live.com, Office 365,Using Office 365 software suite,Software
+.onenote., Office 365,Using Office 365 software suite,Software
+lifedom.top, Cloudflare,Accessing a website protected by Cloudfare CDN service,CDN
+coby.ns.cloudflare.com, Cloudflare,Accessing a website protected by Cloudfare CDN service,CDN
+amanda.ns.cloudflare.com, Cloudflare,Accessing a website protected by Cloudfare CDN service,CDN
+d295hzzivaok4k.cloudfront.net, Opendns,Accessing a website protected by Cloudfare CDN service,CDN
+.opendns.com, Opendns,Using network resolved by OPENDNS ,DNS
+slack.com, Slack,Using Slack collaboration tools and services, Collaborative
+.slack-msgs.com, Slack,Using Slack collaboration tools and services, Collaborative
+slack-files.com, Slack,Using Slack collaboration tools and services, Collaborative
+slack-imgs.com, Slack,Using Slack collaboration tools and services, Collaborative
+.slack-edge.com, Slack,Using Slack collaboration tools and services, Collaborative
+.slack-core.com, Slack,Using Slack collaboration tools and services, Collaborative
+slack-redir.net, Slack,Using Slack collaboration tools and services, Collaborative
+slack-assets2.s3-, Slack,Using Slack collaboration tools and services, Collaborative
+wechat.com, Wechat,Using on WeChat App,Social Networking Site
+github.com, Github,Using Github / GIT, Collaborative
+.github.com, Github,Using Github / GIT, Collaborative
+github.io, Github,Using Github / GIT, Collaborative
+.github.io, Github,Using Github / GIT, Collaborative
+githubusercontent.com, Github,Using Github / GIT, Collaborative
+.githubusercontent.com, Github,Using Github / GIT, Collaborative
+.steampowered.com, Steam,Gaming on STEAM gaming platform,Gaming
+steamcommunity.com, Steam,Gaming on STEAM gaming platform,Gaming
+.steamcontent.com, Steam,Gaming on STEAM gaming platform,Gaming
+.steamstatic.com, Steam,Gaming on STEAM gaming platform,Gaming
+steamcommunity-a.akamaihd.net, Steam,Gaming on STEAM gaming platform,Gaming
+.wechat.com, WeChat,Using on WeChat App,Messaging Client
+.wechat.org, WeChat,Using on WeChat App,Messaging Client
+.wechatapp.com, WeChat,Using on WeChat App,Messaging Client
+.we.chat, WeChat,Using on WeChat App,Messaging Client
+.wx., WeChat,Using on WeChat App,Messaging Client
+.weixin., WeChat,Using on WeChat App,Messaging Client
+.mmsns.qpic.cn, WeChat,Using on WeChat App,Messaging Client
+dnscrypt.org, Dnscrypt,Using DNSCrypt for encrypting DNS requests / responses,DNS Encryption
+torrent., Bittorrent,Using torrent client Bittorent for file downloading , TORRENT
+torrents., Bittorrent,Using torrent client Bittorent for file downloading , TORRENT
+torrentz., Bittorrent,Using torrent client Bittorent for file downloading , TORRENT
+.nintendo.net, Nintendo,Playing games on Nintendo Gaming Consoles,Gaming
+.nintendo.com, Nintendo,Playing games on Nintendo Gaming Consoles,Gaming
+.playstation.net, Playstation,Playing games on Playstation gaming consoles,Gaming
+.playstation.com, Playstation,Playing games on Playstation gaming consoles,Gaming
+.sonyentertainmentnetwork.com, Playstation,Playing games on Playstation gaming consoles,Gaming
+.linkedin.com, Linkedin,Using Linkedin,Social Networking Site
+.licdn.com, Linkedin,Using Linkedin,Social Networking Site
+.sndcdn.com, Soundcloud, Listening to music / podcasts with SoundCloud,Music
+.soundcloud.com, Soundcloud, Listening to music / podcasts with SoundCloud,Music
+getrockerbox.com, Soundcloud, Listening to music / podcasts with SoundCloud,Music
+web.telegram.org, Telegram,Using Telegram,Messaging Client
+tdesktop.com, Telegram,Using Telegram,Messaging Client
+tupdate.com, Telegram,Using Telegram,Messaging Client
+.pastebin.com, Pastebin,Downloading a file shared on Pastebin,Download
+.ppstream.com, Ppstream,Watching a video on Ppstream,Video
+.pps.tv, Ppstream,Watching a video on Ppstream,Video
+.vidto.me, Ppstream,Watching a video on Ppstream,Video
+.vidto.se, Ppstream,Watching a video on Ppstream,Video
+quickplay.com,QuickPlay,Watching a video on QUICKPLAY,Video
+.iqiyi.com,iQiyi,Watching a video on iQiyi,Video
+.qiyi.com,iQiyi,Watching a video on iQiyi,Video
+.71.am, Generic,Watching a video,Video
+.qiyipic.com, Generic, Streaming, Fun
+.1kxun., Generic, Streaming, Fun
+tcad.wedolook.com, Generic, Streaming, Fun
+baidu.com, Generic, Web, Fun
+icq., Generic, Chat, Acceptable
+.icq., Generic, Chat, Acceptable
+.rapidvideo.com, Generic, Streaming, Fun
+.playercdn.net, Generic, Streaming, Fun
+showmax.com, Generic, Video, Fun
+showmax.akamaized.net, Generic, Video, Fun
+snapcraft.io, Ubuntuone,"Operating on a device having ubuntu os, loggin",Linux
+ubuntu.com, Ubuntuone,"Operating on a device having ubuntu os, loggin",Linux
+signal.org, Signal,Using Signal,Messaging Client
+whispersystems.org, Signal,Using Signal,Messaging Client
+musical.ly, Tiktok,Using TikTok,Social Networking Site
+muscdn.com, Tiktok,Using TikTok,Social Networking Site
